@@ -1,0 +1,6 @@
+[2022-10-29 14:50:50,656] root - INFO - This is main
+[2022-10-29 14:50:50,656] root - INFO - This is a constructor class
+[2022-10-29 14:50:50,656] root - INFO - Constructor class ended
+[2022-10-29 14:50:50,656] root - INFO - This is a function
+[2022-10-29 14:50:50,657] root - INFO - Function ended
+[2022-10-29 14:50:50,657] root - INFO - Main ended
