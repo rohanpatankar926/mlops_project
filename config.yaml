@@ -1,0 +1,7 @@
+mongoDbCredentials:
+  uri: mongodb+srv://rohan1234:1234@cluster0.r2azpjx.mongodb.net/test
+  database: ProjectDataStore
+  collection: MyCollection
+
+Data:
+  json_data: data.json
