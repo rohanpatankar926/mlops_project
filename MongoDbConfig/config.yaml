@@ -1,0 +1,8 @@
+mongoDbCredentials:
+  uri: mongodb+srv://rohan:4566@datastore.t7bpbbq.mongodb.net/test
+  database: DataStore
+  collection: Schema_ConsumerComplaints
+
+
+Data:
+  json_data: /home/dataguy/mongodb_datastore_extract/data.json

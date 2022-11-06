@@ -23,8 +23,7 @@ from omegaconf import DictConfig
 #                 except Exception as e:
 #                     raise e
 
-
-@hydra.main(config_path="config", config_name="config")
+@hydra.main(config_path="MongoDbConfig", config_name="config")
 def load_data(config: DictConfig):
                 try:
                     myClient=pymongo.MongoClient(config.mongoDbCredentials.uri)
@@ -32,8 +31,9 @@ def load_data(config: DictConfig):
                     col=database[config.mongoDbCredentials.collection]
                     with open(config.Data.json_data) as json_data:
                         json_data_=json.loads(json_data.read())
-                    DummyData = json_data_ 
-                    load_data = col.insert_one(DummyData)
+                    print(json_data_)
+                    Schemadata = json_data_ 
+                    load_data = col.insert_one(Schemadata)
                     return f"Data Loaded successfully at {load_data}"
                 except Exception as e:
                     raise e
